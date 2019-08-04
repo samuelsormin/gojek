@@ -9,19 +9,36 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     color:#494a4a;
 }
-.title {
+
+/* general */
+h2 {
+    font-size:3.4rem;
     color:#1c1d1d;
 }
 a {
     text-decoration:none;
 }
+p {
+    font-size:1.6rem;
+}
+.row {
+    display:flex;
+}
+.middle {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 
 /* header */
 header {
+    position:fixed;
     background-color:#fff;
     display:flex;
     justify-content:center;
     box-shadow:0 2px 6px 0 rgba(0,0,0,.2);
+    width:100%;
 }
 header .container {
     display:flex;
@@ -64,7 +81,7 @@ nav.header-menu ul li a:hover {
 .banner-text h1 {
     font-size:5rem;
     line-height:6rem;
-    color:white;
+    color:#fff;
     /* letter-spacing:0.1rem; */
 }
 .banner-text h3 {
@@ -85,6 +102,67 @@ nav.header-menu ul li a:hover {
     border:0;
     font-weight:bold;
     font-size:1.6rem;
-    color:white;
+    color:#fff;
     cursor:pointer;
 }
+
+/* content */
+.container-fluid {
+    background-color:#fff;
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+.container-fluid img {
+    width:100%;
+}
+.container {
+    width:1108px;
+}
+.solv .rounded {
+    border-radius:18px;
+}
+.slider .rounded {
+    border-radius:3.4rem;
+}
+.text .link {
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#00aa13;
+}
+.text .link:hover {
+    border-bottom:2px solid #00aa13;
+}
+
+/* distances */
+.mt-5 {
+    margin-top:2rem;
+}
+.mt-8 {
+    margin-top:8rem;
+}
+.mb-5 {
+    margin-bottom:3rem;
+}
+.pb-8 {
+    padding-bottom:8rem;
+}
+.mb-10 {
+    margin-bottom:10rem;
+}
+.pl-95 {
+    padding-left:9.5rem;
+}
+
+/* columns */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.67%; }
+.col-6 { width: 50%;}
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width:83.33%; }
+.col-11 { width: 91.66%; }
