@@ -119,8 +119,11 @@ nav.header-menu ul li a:hover {
 .container {
     width:1108px;
 }
-img.rounded {
+.solv .rounded {
     border-radius:18px;
+}
+.slider .rounded {
+    border-radius:3.4rem;
 }
 .text .link {
     font-size:1.6rem;
