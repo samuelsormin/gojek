@@ -6,11 +6,14 @@ html {
     font-size:62.5%;
 }
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     color:#494a4a;
 }
 .title {
     color:#1c1d1d;
+}
+a {
+    text-decoration:none;
 }
 
 /* header */
@@ -42,4 +45,46 @@ nav.header-menu ul li a {
 }
 nav.header-menu ul li a:hover {
     color:#00aa13;
+}
+
+/* banner */
+.banner {
+    background-image: url(http://gojek.test/images/banner.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:556px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.banner .container {
+    width:1108px;
+}
+.banner-text h1 {
+    font-size:5rem;
+    line-height:6rem;
+    color:white;
+    /* letter-spacing:0.1rem; */
+}
+.banner-text h3 {
+    font-size:2.8rem;
+    font-style:italic;
+    color:#f0b323;
+    margin-top:2.4rem;
+    margin-bottom:3.2rem;
+}
+.banner-text span {
+    font-size:5.2rem;
+    display:block;
+}
+.banner-button {
+    background-color:rgba(0,0,0,.35);
+    padding:10px 30px;
+    border-radius:20px;
+    border:0;
+    font-weight:bold;
+    font-size:1.6rem;
+    color:white;
+    cursor:pointer;
 }
