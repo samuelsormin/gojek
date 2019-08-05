@@ -15,6 +15,9 @@ h2 {
     font-size:3.4rem;
     color:#1c1d1d;
 }
+h2.big {
+    font-size:4rem;
+}
 h3 {
     font-size:3.2rem;
     color:#1c1d1d;
@@ -46,6 +49,7 @@ header {
     justify-content:center;
     box-shadow:0 2px 6px 0 rgba(0,0,0,.2);
     width:100%;
+    z-index:9;
 }
 header .container {
     display:flex;
@@ -67,7 +71,8 @@ nav.header-menu ul li a {
     margin-right:32px;
     transition:all .5s;
 }
-nav.header-menu ul li a:hover {
+nav.header-menu ul li a:hover,
+nav.header-menu ul li a.active {
     color:#00aa13;
 }
 
@@ -127,7 +132,7 @@ nav.header-menu ul li a:hover {
     width:1108px;
 }
 .solv .rounded {
-    border-radius:18px;
+    border-radius:16px;
 }
 .slider .rounded {
     border-radius:3.4rem;
@@ -168,6 +173,61 @@ nav.header-menu ul li a:hover {
 .box:hover {
     box-shadow:0 6px 12px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.1);
 }
+.inovasi button {
+    background-color:#fff;
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#00aa13;
+    padding:15px 10px;
+    width:100%;
+    border:1px solid #00aa13;
+    border-radius:30px;
+    cursor:pointer;
+    transition:all .5s;
+}
+.inovasi button:hover {
+    background-color:#00aa13;
+    color:#fff;
+}
+.awards {
+    background-image:url(http://gojek.test/images/awards-bg.png);
+    background-repeat:no-repeat;
+    height:470px;
+}
+.awards .container {
+    display:flex;
+    align-items:center;
+}
+.awards .row {
+    align-items:center;
+}
+.awards-text {
+    box-sizing:border-box;
+    padding-right:12rem;
+}
+.awards-text h2 {
+    font-size:4 rem;
+    color:#fff;
+    margin-bottom:1.8rem;
+}
+.awards-text p {
+    font-size:1.8rem;
+    color:#fff;
+}
+.awards-card {
+    background-color:#fff;
+    border-radius:16px;
+    padding:16px;
+    margin:0 8px;
+}
+.awards-card img {
+    border-radius:16px 16px 0 0;
+}
+.awards-card h3 {
+    margin-top:1.6rem;
+    font-size:2.4rem;
+    color:#494a4a;
+}
 
 /* distances */
 .mt-2 {
@@ -194,8 +254,17 @@ nav.header-menu ul li a:hover {
 .mb-15 {
     margin-bottom:13rem;
 }
+.ml-1 {
+    margin-left:1rem;
+}
+.mr-1 {
+    margin-right:1rem;
+}
 .pl-95 {
     padding-left:9.5rem;
+}
+.pr-95 {
+    padding-right:10.5rem;
 }
 .pb-8 {
     padding-bottom:8rem;
