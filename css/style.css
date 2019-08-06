@@ -18,15 +18,24 @@ h2 {
 h2.big {
     font-size:4rem;
 }
+h2.medium {
+    font-size:3.7rem;
+}
 h3 {
     font-size:3.2rem;
     color:#1c1d1d;
+}
+h3.small {
+    font-size:2.5rem;
 }
 a {
     text-decoration:none;
 }
 p {
     font-size:1.6rem;
+}
+p.medium {
+    font-size:1.8rem;
 }
 li {
     list-style:none;
@@ -39,7 +48,12 @@ li {
     justify-content:center;
     align-items:center;
 }
-
+.center {
+    text-align:center;
+}
+.icon-medium {
+    width:9.6rem !important;
+}
 
 /* header */
 header {
@@ -50,6 +64,9 @@ header {
     box-shadow:0 2px 6px 0 rgba(0,0,0,.2);
     width:100%;
     z-index:9;
+}
+.shadow-none {
+    box-shadow:none;
 }
 header .container {
     display:flex;
@@ -145,6 +162,9 @@ nav.header-menu ul li a.active {
 .text .link:hover {
     border-bottom:2px solid #00aa13;
 }
+.text span {
+    display:block;
+}
 .services h2 {
     font-size:3.8rem;
 }
@@ -228,13 +248,59 @@ nav.header-menu ul li a.active {
     font-size:2.4rem;
     color:#494a4a;
 }
+.pilar .col-4 {
+    margin:0 2rem;
+}
+.card-group {
+    display: flex;
+    flex-flow: column wrap;
+    max-height:1500px;
+}
+.card-column hr {
+    width:16rem;
+    border:0;
+    border-top:1px solid #aaa;
+    margin-bottom:5rem;
+}
+.card-title {
+    font-size:2.4rem;
+    font-weight:bold;
+    color:#1c1d1d;
+}
+.card-title span {
+    font-weight:lighter !important;
+}
+.card-body {
+    margin-bottom:5rem;
+}
+.card-body p {
+    font-size:1.8rem !important;
+    margin-bottom:1.6rem;
+}
+.card-body i {
+    margin-right:1rem;
+    font-size:1.4rem !important;
+}
+.card-body a {
+    color:#494a4a !important;
+    transition:all .5s;
+}
+.card-body a:hover {
+    color:#00aa13 !important;
+}
 
 /* distances */
 .mt-2 {
     margin-top:2rem;
 }
+.mt-3 {
+    margin-top:3rem;
+}
 .mt-5 {
     margin-top:5rem;
+}
+.mb-1 {
+    margin-bottom:1.4rem;
 }
 .mb-2 {
     margin-bottom:2rem;
@@ -244,6 +310,9 @@ nav.header-menu ul li a.active {
 }
 .mb-5 {
     margin-bottom:5rem;
+}
+.mb-6 {
+    margin-bottom:6rem;
 }
 .mb-8 {
     margin-bottom:8rem;
@@ -320,7 +389,7 @@ footer button {
     margin-bottom:1rem !important;
 }
 .download img {
-    width:150px;
+    width:15rem;
     margin-bottom:0.8rem;
     display:block;
     cursor:pointer;
